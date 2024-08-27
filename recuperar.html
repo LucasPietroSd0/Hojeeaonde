@@ -227,7 +227,53 @@ align-items: center;
         top:33px;
         left: 320px;;
         }
-        #voltar1{cursor: pointer;}
+       
+
+        @media (max-width: 599px) {
+        /* Estilos para dispositivos com largura de tela até 599px Tela Extra Pequena (Dispositivos Móveis em Retrato):*/ 
+        #bntrecuperar{position: absolute;
+        top:65px;
+        }
+        #voltar{position: absolute;
+        left:100px}
+      
+      }
+
+
+      @media (min-width: 600px) and (max-width: 899px) {
+        /* Estilos para dispositivos com largura de tela entre 600px e 899px Tela Pequena (Dispositivos Móveis em Paisagem): */
+        #bntrecuperar{position: absolute;
+        top:65px;
+        }
+        #voltar{position: absolute;
+        left:100px}
+      
+      }
+      @media (min-width: 900px) and (max-width: 1199px) {
+  /* Estilos para dispositivos com largura de tela entre 900px e 1199px Tela Média (Tablets em Retrato e Pequenos Monitores): */
+
+        #voltar{position: absolute;
+        left:255px}
+      }
+      
+@media(max-width: 1024px){
+
+  #voltar{position: absolute;
+        left:320px}
+
+     
+     
+}
+
+@media (min-width: 1200px) {
+  /* Estilos para dispositivos com largura de tela a partir de 1200px Tela Grande (Desktops e Monitores Grandes) */
+  #voltar{position: absolute;
+        left:400px;
+       }
+
+   
+    }
+  
     </style>
 </head>
 <body>
