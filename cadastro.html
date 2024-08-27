@@ -1,262 +1,456 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoje é Aonde</title> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-       
-       body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Faz com que o conteúdo ocupe toda a altura da viewport */
-    margin: 0;
-   
-}.container {
-    text-align: center; /* Centraliza o texto dentro do container */
-    max-width: 600px; /* Define a largura máxima do conteúdo */
-    width: 100%; /* Garante que o conteúdo se adapte à largura máxima */
-    padding: 0 20px; /* Adiciona um pequeno espaçamento interno */
-}header, nav, main, footer {
-    margin-bottom: 20px; /* Espaçamento entre os elementos */
-}
-#titulo{position: absolute;
-    color:#F0C967;
-left: 50%;
-transform: translateX(-50%);
-top: 0px;}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoje é Aonde</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /* Faz com que o conteúdo ocupe toda a altura da viewport */
+      margin: 0;
 
-body{background-color: rgb(0, 0, 0);
-  font-family: Montserrat;
+    }
+
+    .container {
+      text-align: center;
+      /* Centraliza o texto dentro do container */
+      max-width: 600px;
+      /* Define a largura máxima do conteúdo */
+      width: 100%;
+      /* Garante que o conteúdo se adapte à largura máxima */
+      padding: 0 20px;
+      /* Adiciona um pequeno espaçamento interno */
+    }
+
+    header,
+    nav,
+    main,
+    footer {
+      margin-bottom: 20px;
+      /* Espaçamento entre os elementos */
+    }
+
+    #titulo {
+      position: absolute;
+      color: #F0C967;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0px;
+    }
+
+    body {
+      background-color: rgb(0, 0, 0);
+      font-family: Montserrat;
+    }
+
+    #logo {
+      position: absolute;
+      left: 380px;
+      top: 25px;
+    }
+
+    #text {
+      position: absolute;
+      left: 350px;
+      top: 100px;
+    }
+
+    /* Rectangle 4222 */
+    #teste {
+      position: absolute;
+      width: 409px;
+      height: 61px;
+      left: calc(50% - 409px/2 - 0.5px);
+      top: 400px;
+      background: #F0C967;
+      border-radius: 10px;
+      align-items: center;
+
+    }
+
+   /* @media (max-width: 600px) {
+      #titulo {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      #logo {
+        position: absolute;
+        margin-top: 0px;
+        left: 150px;
+      }
+
+      #text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 140px;
+      }
+
+      button {
+        position: absolute;
+        margin-top: 190px;
+        left: 50%;
+      }
+    }
+*/
+    button {
+      font-family: Montserrat;
+      font-weight: bold;
+    }
+
+    input {
+      color: #F0C967;
+      position: absolute;
+      background-color: black;
+      border-block-color: #F0C967;
+      width: 400px;
+      height: 60px;
+      border-radius: 10px;
+
+    }
+
+    ::placeholder {
+      color: #F0C967;
+    }
+
+    #email {
+      position: absolute;
+      top: 150px;
+      border-color: #F0C967;
+    }
+
+    #senha {
+      position: absolute;
+      top: 250px;
+      border-color: #F0C967;
+    }
+
+    #Esqueci {
+      color: #F0C967;
+      position: absolute;
+      top: 320px;
+      left: 52%;
+    }
+
+    #teste {
+      position: absolute;
+      top: 350px;
+      cursor: pointer;
+    }
+
+    #opcao {
+      color: #F0C967
+    }
+
+
+    #olho {
+      /* eye */
+      position: absolute;
+      left: 87.31%;
+      right: 8.97%;
+      top: 28.77%;
+      bottom: 69.63%;
+      color: #F0C967;
+    }
+
+    #continuarcom {
+      color: #F0C967;
+      position: absolute;
+      top: 430px;
+    }
+
+    #hr1 {
+      border-color: #F0C967;
+      position: absolute;
+      top: 450px;
+      width: 60px;
+      left: 38%;
+    }
+
+    #hr2 {
+      border-color: #F0C967;
+      position: absolute;
+      top: 450px;
+      width: 60px;
+      left: 58%
+    }
+
+    #ou {
+      position: absolute;
+      width: 194px;
+      height: 56.92px;
+      left: calc(50% - 194px/2 - 107.5px);
+      top: 529px;
+      background-color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #ap {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 15px;
+    }
+
+    #io {
+      position: absolute;
+      width: 194px;
+      height: 56.92px;
+      left: calc(50% - 194px/2 + 106.5px);
+      top: 529px;
+      background-color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #go {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 15px;
+    }
+
+    #oi {
+      position: absolute;
+      width: 194px;
+      height: 56.92px;
+      left: 50%;
+      transform: translateX(-50%);
+      align-items: center;
+      top: 600px;
+      background-color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #outras {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 3.5px;
+      font-family: montsserat;
+      color: black;
+      font-weight: bold;
+    }
+
+    #teste1 {
+      position: absolute;
+      width: 180px;
+      height: 61px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 680px;
+      background: #F0C967;
+      border-radius: 10px;
+      background-color: black;
+      color: #F0C967;
+      cursor: pointer;
+    }
+
+    #hr3 {
+      position: absolute;
+      top: 700px;
+      border-color: #F0C967;
+      width: 60px;
+      left: 38%;
+    }
+
+    #hr4 {
+      position: absolute;
+      top: 700px;
+      left: 58%;
+      width: 60px;
+      border-color: #F0C967;
+    }
+
+    #logo {
+      position: absolute;
+      top: 800px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    #q {
+      position: absolute;
+      top: 1000px
+    }
+
+    #voltar {
+      position: absolute;
+      top: 33px;
+      left: 450px;
+      ;
+    }
+
+   /* @media (max-width: 400px) {
+      #hr1 {
+        position: absolute;
+        left: 100px;
+      }
+
+      ;
+
+      #hr2 {
+        position: absolute;
+        left: 200px;
+      }
+
+      #voltar {
+        position: absolute;
+        left: 100px;
+      }*/
+
+      @media (max-width: 599px) {
+        /* Estilos para dispositivos com largura de tela até 599px Tela Extra Pequena (Dispositivos Móveis em Retrato):*/ 
+        #voltar{position: absolute;
+        left:100px;
+       }
+
+        #hr1{position: absolute;
+        left:150px;
+        top:448px;}
+        #hr2{position: absolute;
+        left:380px;
+      top:448px;}
+      }
+
+
+      @media (min-width: 600px) and (max-width: 899px) {
+        /* Estilos para dispositivos com largura de tela entre 600px e 899px Tela Pequena (Dispositivos Móveis em Paisagem): */
+        #voltar{position: absolute;
+        left:100px;
+       }
+
+        #hr1{position: absolute;
+        left:150px;
+        top:448px;}
+        #hr2{position: absolute;
+        left:380px;
+      top:448px;}
+      }
+      
+
+      @media (min-width: 900px) and (max-width: 1199px) {
+  /* Estilos para dispositivos com largura de tela entre 900px e 1199px Tela Média (Tablets em Retrato e Pequenos Monitores): */
+  #voltar{position: absolute;
+        left:250px;
+       }
+
+        #hr1{position: absolute;
+        left:300px;
+        top:448px;}
+        #hr2{position: absolute;
+        left:535px;
+      top:448px;}
+      }
+@media(min-width: 1024px){
+
+  #voltar{position: absolute;
+        left:320px;
+       }
+
+        #hr1{position: absolute;
+        left:360px;
+        top:448px;}
+        #hr2{position: absolute;
+        left:600px;
+      top:448px;}
+     
 }
 
-#logo{position: absolute;
-left: 380px;
-top:25px;}
-#text{position: absolute;
-left: 350px;
-top:100px;}
-/* Rectangle 4222 */
-#teste{
-position: absolute;
-width: 409px;
-height: 61px;
-left: calc(50% - 409px/2 - 0.5px);
-top: 400px;
-background: #F0C967;
-border-radius: 10px;
-align-items: center;
+@media (min-width: 1200px) {
+  /* Estilos para dispositivos com largura de tela a partir de 1200px Tela Grande (Desktops e Monitores Grandes) */
+  #voltar{position: absolute;
+        left:400px;
+       }
 
-}
+        #hr1{position: absolute;
+        left:450px;
+        top:448px;}
+        #hr2{position: absolute;
+        left:690px;
+      top:448px;}
+     
+    
+    }
 
-@media (max-width: 600px) {
-            #titulo {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            #logo {
-                position: absolute;
-                margin-top: 0px;
-                left: 150px;
-            } 
-            #text {
-                position: absolute;
-                left:50%;
-                transform: translateX(-50%);
-                top:140px;
-            }
-            button{position: absolute;
-            margin-top: 190px;
-              left: 50%;
-            }
-        }
-        
-        button{font-family:Montserrat;
-          font-weight: bold; }
-          
-          input{color:#F0C967;
-          position: absolute;
-            background-color:black;
-            border-block-color: #F0C967;
-            width: 400px;
-            height: 60px;
-            border-radius: 10px;
-          
-          }
-          ::placeholder{color:#F0C967; }
-        #email{position:absolute;
-          top:150px;
-          border-color: #F0C967;
-        }
-        #senha{position:absolute;
-          top:250px;
-          border-color: #F0C967;
-        }
-        #Esqueci{color:#F0C967;
-          position: absolute;
-          top: 320px;
-          left: 52%;
-        }
-        #teste{position:absolute;
-          top:350px;
-          cursor: pointer;
-        }
-        #opcao{color:#F0C967}
-        
-        
-#olho{/* eye */
-position: absolute;
-left: 87.31%;
-right: 8.97%;
-top: 28.77%;
-bottom: 69.63%;
-color: #F0C967;
-} 
-     #continuarcom{color:#F0C967;
-    position: absolute;
-top:430px;}   
 
-#hr1{border-color: #F0C967;
-position: absolute;
-top: 450px;
-width:60px ;
-left: 38%;}
-#hr2{border-color: #F0C967;
-position: absolute;
-top:450px;
-width: 60px;
-left:58%
-}
-#ou{
-position: absolute;
-width: 194px;
-height: 56.92px;
-left: calc(50% - 194px/2 - 107.5px);
-top: 529px;
-background-color: white;
-border-radius: 10px;
-cursor: pointer;
-}
-#ap{position: absolute;
-  left:50%;
-  transform: translateX(-50%);
-  top:15px;
-}
-#io{
-position: absolute;
-width: 194px;
-height: 56.92px;
-left: calc(50% - 194px/2 + 106.5px);
-top: 529px;
-background-color: white;
-border-radius: 10px;
-cursor: pointer;
-}
-#go{position: absolute;
-left: 50%;
-transform: translateX(-50%);
-top:15px;
-}#oi{
-position: absolute;
-width: 194px;
-height: 56.92px;
-left: 50%;
-transform: translateX(-50%);
-align-items: center;
-top: 600px;
-background-color: white;
-border-radius: 10px;
-cursor: pointer;
-}
-#outras{position: absolute;
-left: 50%;
-transform: translateX(-50%);
-top: 3.5px;
-font-family: montsserat;
-color: black;
-font-weight: bold;
-}
-
-#teste1{
-position: absolute;
-width: 180px;
-height: 61px;
-left: 50%;
-transform: translateX(-50%);
-top:680px;
-background: #F0C967;
-border-radius: 10px;
-background-color: black;
-color:#F0C967;
-cursor: pointer;
-}
-
-#hr3{position: absolute;
-top: 700px;
-border-color: #F0C967;
-width: 60px;
-left: 38%;}
-#hr4{position: absolute;
-top:700px;
-left: 58%;
-width: 60px;
-border-color: #F0C967;}
-#logo{position: absolute;
-top:800px;
-left: 50%;
-transform: translateX(-50%);}
-#q{position: absolute;
-top:1000px}
-#voltar{position: absolute;
-        top:33px;
-        left: 450px;;
-        }
-    </style>
+  </style>
 </head>
+
 <body>
-  <a href="login.html"><svg id="voltar" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22.3062 9.77463H3.79668L9.36765 3.08016C9.46817 2.96349 9.54836 2.82392 9.60352 2.66962C9.65868 2.51531 9.68772 2.34934 9.68893 2.18141C9.69015 2.01347 9.66351 1.84693 9.61059 1.69149C9.55767 1.53605 9.47952 1.39484 9.3807 1.27608C9.28187 1.15733 9.16436 1.06342 9.03501 0.999823C8.90565 0.936229 8.76706 0.904228 8.62731 0.905687C8.48756 0.907147 8.34944 0.942037 8.22103 1.00832C8.09262 1.07461 7.97648 1.17096 7.87939 1.29176L0.511776 10.1452C0.314459 10.3824 0.203613 10.704 0.203613 11.0394C0.203613 11.3748 0.314459 11.6964 0.511776 11.9336L7.87939 20.7871C8.0779 21.0174 8.34377 21.1449 8.61973 21.142C8.8957 21.1392 9.15968 21.0061 9.35483 20.7716C9.54997 20.5371 9.66066 20.2199 9.66306 19.8883C9.66546 19.5567 9.55937 19.2372 9.36765 18.9987L3.79668 12.3042H22.3062C22.5854 12.3042 22.8531 12.1709 23.0505 11.9337C23.2479 11.6965 23.3588 11.3748 23.3588 11.0394C23.3588 10.704 23.2479 10.3823 23.0505 10.1451C22.8531 9.90788 22.5854 9.77463 22.3062 9.77463Z" fill="#F0C967"/>
-    </svg></a> 
-  <input id="email" type="text" placeholder ="Seu Endereço de E-Mail"</placeholder></input><br>
-  <input id="senha" type="text" placeholder ="Sua Senha"</placeholder></input>
+  <a href="login.html"><svg id="voltar" width="24" height="22" viewBox="0 0 24 22" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M22.3062 9.77463H3.79668L9.36765 3.08016C9.46817 2.96349 9.54836 2.82392 9.60352 2.66962C9.65868 2.51531 9.68772 2.34934 9.68893 2.18141C9.69015 2.01347 9.66351 1.84693 9.61059 1.69149C9.55767 1.53605 9.47952 1.39484 9.3807 1.27608C9.28187 1.15733 9.16436 1.06342 9.03501 0.999823C8.90565 0.936229 8.76706 0.904228 8.62731 0.905687C8.48756 0.907147 8.34944 0.942037 8.22103 1.00832C8.09262 1.07461 7.97648 1.17096 7.87939 1.29176L0.511776 10.1452C0.314459 10.3824 0.203613 10.704 0.203613 11.0394C0.203613 11.3748 0.314459 11.6964 0.511776 11.9336L7.87939 20.7871C8.0779 21.0174 8.34377 21.1449 8.61973 21.142C8.8957 21.1392 9.15968 21.0061 9.35483 20.7716C9.54997 20.5371 9.66066 20.2199 9.66306 19.8883C9.66546 19.5567 9.55937 19.2372 9.36765 18.9987L3.79668 12.30422.3062C22.5854 12.3042 22.8531 12.1709 23.0505 11.9337C23.2479 11.6965 23.3588 11.3748 23.3588 11.0394C23.3588 10.704 23.2479 10.3823 23.0505 10.1451C22.8531 9.90788 22.5854 9.77463 22.3062 9.77463Z"
+        fill="#F0C967" />
+    </svg></a>
+  <input id="email" type="text" placeholder="Seu Endereço de E-Mail"><br>
+  <input id="senha" type="text" placeholder="Sua Senha">
   <a id="Esqueci" href="recuperar.html">Esqueci minha Senha</a>
-<a href="youtube.com" ><button id="teste">Cadastrar-se</button></a>
+  <a href="login.html"><button id="teste">Cadastrar-se</button></a>
 
 
- <hr id="hr3"><a href="login.html" ><button id="teste1">Cadastre-se</button></a><hr id="hr4">
-<div id="olho"></div>
+  <div id="olho"></div>
 
-        
-<h1 id="titulo">Cadastre-se</h1>
-<hr id="hr1"><p id="continuarcom">Ou Continuar com</p><hr id="hr2">
+
+  <h1 id="titulo">Cadastre-se</h1>
+  <hr id="hr1">
+  <p id="continuarcom">Ou Continuar com</p>
+  <hr id="hr2">
 
 
   <div id="ou"><svg id="ap" width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M18.3937 13.7396C18.382 11.6093 19.3523 10.0014 21.3162 8.81723C20.2173 7.25578 18.5574 6.3967 16.3656 6.22836C14.2906 6.06584 12.0228 7.42992 11.1929 7.42992C10.3162 7.42992 8.30553 6.28641 6.72742 6.28641C3.46599 6.33865 0 8.86947 0 14.0182C0 15.539 0.280553 17.1101 0.841658 18.7315C1.5898 20.8618 4.29012 26.086 7.10733 25.9989C8.58023 25.9641 9.62062 24.9599 11.5377 24.9599C13.3964 24.9599 14.3608 25.9989 16.0032 25.9989C18.8438 25.9583 21.2869 21.2101 22 19.074C18.1892 17.292 18.3937 13.8498 18.3937 13.7396ZM15.0855 4.20835C16.6812 2.32766 16.5351 0.61529 16.4883 0C15.0797 0.0812648 13.449 0.951959 12.5197 2.02582C11.4968 3.17513 10.8948 4.59726 11.0234 6.19934C12.5489 6.31543 13.94 5.53761 15.0855 4.20835Z" fill="black"/>
+      <path
+        d="M18.3937 13.7396C18.382 11.6093 19.3523 10.0014 21.3162 8.81723C20.2173 7.25578 18.5574 6.3967 16.3656 6.22836C14.2906 6.06584 12.0228 7.42992 11.1929 7.42992C10.3162 7.42992 8.30553 6.28641 6.72742 6.28641C3.46599 6.33865 0 8.86947 0 14.0182C0 15.539 0.280553 17.1101 0.841658 18.7315C1.5898 20.8618 4.29012 26.086 7.10733 25.9989C8.58023 25.9641 9.62062 24.9599 11.5377 24.9599C13.3964 24.9599 14.3608 25.9989 16.0032 25.9989C18.8438 25.9583 21.2869 21.2101 22 19.074C18.1892 17.292 18.3937 13.8498 18.3937 13.7396ZM15.0855 4.20835C16.6812 2.32766 16.5351 0.61529 16.4883 0C15.0797 0.0812648 13.449 0.951959 12.5197 2.02582C11.4968 3.17513 10.8948 4.59726 11.0234 6.19934C12.5489 6.31543 13.94 5.53761 15.0855 4.20835Z"
+        fill="black" />
     </svg>
-    </div>
-<div id="io"><svg id="go" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g clip-path="url(#clip0_268_76)">
-  <path d="M24 12.777C24 11.7522 23.9183 11.0043 23.7415 10.2288H12.2449V14.8543H18.9931C18.8571 16.0039 18.1224 17.735 16.4897 18.8983L16.4669 19.0531L20.1019 21.9196L20.3537 21.9452C22.6666 19.7708 24 16.5717 24 12.777Z" fill="#4285F4"/>
-  <path d="M12.2449 24.9643C15.551 24.9643 18.3265 23.8563 20.3537 21.9452L16.4898 18.8983C15.4558 19.6323 14.068 20.1447 12.2449 20.1447C9.00682 20.1447 6.25854 17.9705 5.27886 14.9652L5.13526 14.9776L1.35552 17.9552L1.30609 18.0951C3.31968 22.1667 7.45574 24.9643 12.2449 24.9643Z" fill="#34A853"/>
-  <path d="M5.27886 14.9652C5.02036 14.1896 4.87076 13.3586 4.87076 12.5C4.87076 11.6413 5.02036 10.8104 5.26526 10.0348L5.25841 9.86966L1.43131 6.84424L1.30609 6.90487C0.476196 8.59449 0 10.4919 0 12.5C0 14.5081 0.476196 16.4054 1.30609 18.095L5.27886 14.9652Z" fill="#FBBC05"/>
-  <path d="M12.2449 4.85526C14.5442 4.85526 16.0952 5.86625 16.9796 6.71111L20.4353 3.27648C18.3129 1.26835 15.551 0.0357666 12.2449 0.0357666C7.45574 0.0357666 3.31968 2.83329 1.30609 6.90492L5.26526 10.0349C6.25855 7.02961 9.00682 4.85526 12.2449 4.85526Z" fill="#EB4335"/>
-  </g>
-  <defs>
-  <clipPath id="clip0_268_76">
-  <rect width="24" height="25" rx="10" fill="white"/>
-  </clipPath>
-  </defs>
-  </svg>
   </div>
-  <div id="oi"><p id="outras">outras opções</p></div>
+  <div id="io"><svg id="go" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_268_76)">
+        <path
+          d="M24 12.777C24 11.7522 23.9183 11.0043 23.7415 10.2288H12.2449V14.8543H18.9931C18.8571 16.0039 18.1224 17.735 16.4897 18.8983L16.4669 19.0531L20.1019 21.9196L20.3537 21.9452C22.6666 19.7708 24 16.5717 24 12.777Z"
+          fill="#4285F4" />
+        <path
+          d="M12.2449 24.9643C15.551 24.9643 18.3265 23.8563 20.3537 21.9452L16.4898 18.8983C15.4558 19.6323 14.068 20.1447 12.2449 20.1447C9.00682 20.1447 6.25854 17.9705 5.27886 14.9652L5.13526 14.9776L1.35552 17.9552L1.30609 18.0951C3.31968 22.1667 7.45574 24.9643 12.2449 24.9643Z"
+          fill="#34A853" />
+        <path
+          d="M5.27886 14.9652C5.02036 14.1896 4.87076 13.3586 4.87076 12.5C4.87076 11.6413 5.02036 10.8104 5.26526 10.0348L5.25841 9.86966L1.43131 6.84424L1.30609 6.90487C0.476196 8.59449 0 10.4919 0 12.5C0 14.5081 0.476196 16.4054 1.30609 18.095L5.27886 14.9652Z"
+          fill="#FBBC05" />
+        <path
+          d="M12.2449 4.85526C14.5442 4.85526 16.0952 5.86625 16.9796 6.71111L20.4353 3.27648C18.3129 1.26835 15.551 0.0357666 12.2449 0.0357666C7.45574 0.0357666 3.31968 2.83329 1.30609 6.90492L5.26526 10.0349C6.25855 7.02961 9.00682 4.85526 12.2449 4.85526Z"
+          fill="#EB4335" />
+      </g>
+      <defs>
+        <clipPath id="clip0_268_76">
+          <rect width="24" height="25" rx="10" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+  <div id="oi">
+    <p id="outras">outras opções</p>
+  </div>
 
   <svg id="logo" width="67" height="78" viewBox="0 0 67 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M25.2278 57.0421H41.2362C41.2362 59.5808 41.2284 62.2522 41.2362 64.9235C41.2518 68.6945 42.6675 71.865 45.5299 74.3102C49.3399 77.5626 53.7116 78.3347 58.3523 76.5447C62.8799 74.8016 65.5434 71.3776 66.2571 66.5458C66.4442 65.2745 66.4598 63.9681 66.4598 62.6772C66.4364 54.5424 66.3857 46.4075 66.3389 38.2726C66.3389 37.7461 66.296 37.2236 66.2688 36.6269C44.1611 54.7295 22.1587 54.6749 0.000274658 36.4436C0.000274658 36.9662 0.000274658 37.3171 0.000274658 37.6681C0.00418091 46.2905 0.0431747 54.9128 0.000274658 63.5352C-0.0231171 68.0433 1.2521 71.9547 4.94516 74.7587C8.92681 77.7771 13.3374 78.3386 17.8689 76.2718C22.4044 74.2049 24.9353 70.543 25.2005 65.5201C25.3487 62.6811 25.2278 59.8304 25.2278 57.0421ZM59.0776 51.1223C59.0776 55.7591 59.2258 60.431 58.984 65.0795C58.9138 66.4054 58.0052 68.0121 56.9756 68.9051C53.9221 71.5609 48.6809 69.6539 48.6809 65.5825C48.6809 61.5112 48.5639 59.1363 48.5795 55.9112C48.5795 55.6187 48.8603 55.1702 49.1215 55.0649C52.3895 53.7351 55.6809 52.456 59.0776 51.1184V51.1223ZM7.402 51.1106C10.7675 52.4521 13.9068 53.6844 17.0266 54.9713C17.3815 55.1195 17.8416 55.5875 17.8494 55.9151C17.9079 59.0817 17.8299 62.0143 17.8299 65.4188C17.6428 68.211 15.2756 70.1336 12.5809 70.1024C9.89394 70.0712 7.5112 67.9185 7.4371 65.0951C7.31231 60.4349 7.402 55.7669 7.402 51.1067V51.1106Z" fill="#F0C967"/>
-    <path d="M41.2242 21.3943C41.2242 24.5726 41.2242 26.7175 41.2242 30.9331C41.2242 32.0562 40.9512 32.5632 39.7929 32.766C35.3901 33.5382 31.0146 33.546 26.6157 32.7426C25.5589 32.5476 25.2352 32.1108 25.243 31.0384C25.2937 25.0016 25.2781 18.9648 25.2625 12.928C25.2391 5.70562 19.7482 0.0470817 12.7404 0.000284666C5.70132 -0.0465124 0.0583801 5.68222 0.01548 12.9553C-0.0469131 22.8372 4.79268 29.9543 12.8262 35.1176C26.1867 43.7009 45.5724 42.4491 57.5641 32.1771C64.0182 26.6434 67.216 19.5926 66.2723 10.9781C65.6366 5.14796 60.7658 -0.0348131 53.524 0.0431819C46.6799 0.117277 41.2866 5.69782 41.2281 12.343C41.2008 15.3614 41.232 21.3982 41.2242 21.3982V21.3943ZM48.7741 29.4473C48.7039 29.1002 48.6298 28.9091 48.6298 28.7181C48.6298 23.2272 48.6181 17.7325 48.6493 12.2416C48.6493 11.6722 48.8248 11.0639 49.0627 10.5374C50.0493 8.33405 52.5256 7.03544 54.7446 7.49951C57.2794 8.02987 59.0031 10.0772 59.0655 12.8188C59.241 20.5208 55.0683 25.5476 48.7702 29.4473H48.7741ZM17.8334 29.5019C13.9142 27.2089 10.8685 24.3971 8.97711 20.5052C7.581 17.635 6.98824 14.5698 7.63169 11.3993C8.13866 8.90732 10.654 7.19533 13.1771 7.44101C15.6457 7.6789 17.775 9.74576 17.81 12.2416C17.888 17.8884 17.8334 23.5353 17.8334 29.5019Z" fill="#F0C967"/>
-    </svg>
-    <div id="q"></div>
+    <path
+      d="M25.2278 57.0421H41.2362C41.2362 59.5808 41.2284 62.2522 41.2362 64.9235C41.2518 68.6945 42.6675 71.865 45.5299 74.3102C49.3399 77.5626 53.7116 78.3347 58.3523 76.5447C62.8799 74.8016 65.5434 71.3776 66.2571 66.5458C66.4442 65.2745 66.4598 63.9681 66.4598 62.6772C66.4364 54.5424 66.3857 46.4075 66.3389 38.2726C66.3389 37.7461 66.296 37.2236 66.2688 36.6269C44.1611 54.7295 22.1587 54.6749 0.000274658 36.4436C0.000274658 36.9662 0.000274658 37.3171 0.000274658 37.6681C0.00418091 46.2905 0.0431747 54.9128 0.000274658 63.5352C-0.0231171 68.0433 1.2521 71.9547 4.94516 74.7587C8.92681 77.7771 13.3374 78.3386 17.8689 76.2718C22.4044 74.2049 24.9353 70.543 25.2005 65.5201C25.3487 62.6811 25.2278 59.8304 25.2278 57.0421ZM59.0776 51.1223C59.0776 55.7591 59.2258 60.431 58.984 65.0795C58.9138 66.4054 58.0052 68.0121 56.9756 68.9051C53.9221 71.5609 48.6809 69.6539 48.6809 65.5825C48.6809 61.5112 48.5639 59.1363 48.5795 55.9112C48.5795 55.6187 48.8603 55.1702 49.1215 55.0649C52.3895 53.7351 55.6809 52.456 59.0776 51.1184V51.1223ZM7.402 51.1106C10.7675 52.4521 13.9068 53.6844 17.0266 54.9713C17.3815 55.1195 17.8416 55.5875 17.8494 55.9151C17.9079 59.0817 17.8299 62.0143 17.8299 65.4188C17.6428 68.211 15.2756 70.1336 12.5809 70.1024C9.89394 70.0712 7.5112 67.9185 7.4371 65.0951C7.31231 60.4349 7.402 55.7669 7.402 51.1067V51.1106Z"
+      fill="#F0C967" />
+    <path
+      d="M41.2242 21.3943C41.2242 24.5726 41.2242 26.7175 41.2242 30.9331C41.2242 32.0562 40.9512 32.5632 39.7929 32.766C35.3901 33.5382 31.0146 33.546 26.6157 32.7426C25.5589 32.5476 25.2352 32.1108 25.243 31.0384C25.2937 25.0016 25.2781 18.9648 25.2625 12.928C25.2391 5.70562 19.7482 0.0470817 12.7404 0.000284666C5.70132 -0.0465124 0.0583801 5.68222 0.01548 12.9553C-0.0469131 22.8372 4.79268 29.9543 12.8262 35.1176C26.1867 43.7009 45.5724 42.4491 57.5641 32.1771C64.0182 26.6434 67.216 19.5926 66.2723 10.9781C65.6366 5.14796 60.7658 -0.0348131 53.524 0.0431819C46.6799 0.117277 41.2866 5.69782 41.2281 12.343C41.2008 15.3614 41.232 21.3982 41.2242 21.3982V21.3943ZM48.7741 29.4473C48.7039 29.1002 48.6298 28.9091 48.6298 28.7181C48.6298 23.2272 48.6181 17.7325 48.6493 12.2416C48.6493 11.6722 48.8248 11.0639 49.0627 10.5374C50.0493 8.33405 52.5256 7.03544 54.7446 7.49951C57.2794 8.02987 59.0031 10.0772 59.0655 12.8188C59.241 20.5208 55.0683 25.5476 48.7702 29.4473H48.7741ZM17.8334 29.5019C13.9142 27.2089 10.8685 24.3971 8.97711 20.5052C7.581 17.635 6.98824 14.5698 7.63169 11.3993C8.13866 8.90732 10.654 7.19533 13.1771 7.44101C15.6457 7.6789 17.775 9.74576 17.81 12.2416C17.888 17.8884 17.8334 23.5353 17.8334 29.5019Z"
+      fill="#F0C967" />
+  </svg>
+  <div id="q"></div>
 </body>
+
 </html>
