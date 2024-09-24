@@ -37,9 +37,12 @@ Vinicius.
 
 # Por Que Escolher o Hoje é Aonde?
 
-° **Facilidade de Uso:** Interface intuitiva e fácil de navegar.
-° **Variedade e Cobertura:** Abrangência em eventos e atividades locais.
-° **Segurança e Confiabilidade:** Compra de ingressos com segurança e proteção de dados.
-° **Personalização:** Recomendação de eventos baseada em suas preferências.
+ **Facilidade de Uso:** Interface intuitiva e fácil de navegar.
+ 
+ **Variedade e Cobertura:** Abrangência em eventos e atividades locais.
+ 
+ **Segurança e Confiabilidade:** Compra de ingressos com segurança e proteção de dados.
+ 
+ **Personalização:** Recomendação de eventos baseada em suas preferências.
 
 **Como Começar?** Baixe o Hoje é Aonde na App Store ou Google Play, crie uma conta e comece a explorar uma infinidade de eventos e experiências que esperam por você. Com o [Nome do Aplicativo], a diversão está a apenas alguns toques de distância!
