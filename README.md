@@ -2,10 +2,15 @@
 
 # Grupo: 
 
+
 Lucas Pietro,
+
 Luciano José, 
+
 Ronaldo Francisco,
+
 Sidney Silva,
+
 Vinicius.
 
 # Apresentação do Hoje é Aonde
