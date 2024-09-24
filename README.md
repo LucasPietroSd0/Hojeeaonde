@@ -1,14 +1,18 @@
 # Hojeeaonde
 
-Grupo: Lucas Pietro, Luciano José, Ronaldo Francisco, Ronaldo Francisco e Sidney Silva.
+Grupo: Lucas Pietro,
+Luciano José, 
+Ronaldo Francisco
+Sidney Silva
+Vinicius
 
-Apresentação do Hoje é Aonde
+# Apresentação do Hoje é Aonde
 
 Introdução Bem-vindo ao Hoje é Aonde, a solução definitiva para descobrir e aproveitar o melhor do entretenimento e lazer na sua cidade. Seja você um entusiasta de eventos, um amante da gastronomia, um frequentador de teatros ou um cinéfilo ávido, nosso aplicativo foi projetado para tornar sua experiência cultural e social mais fácil e agradável.
 
 O que é o Hoje é Aonde? O [Nome do Aplicativo] é um aplicativo multifuncional que combina a pesquisa de eventos e a compra de ingressos em uma única plataforma intuitiva. Nossa missão é conectar você às melhores experiências ao vivo e atividades locais, proporcionando uma maneira conveniente e eficiente de explorar e participar do que há de melhor na sua área.
 
-Funcionalidades Principais
+# Funcionalidades Principais
 
 Descubra Eventos Incríveis: Encontre uma ampla variedade de eventos, desde shows e concertos a peças de teatro, festivais, exposições e muito mais. Utilize nossos filtros avançados para pesquisar por tipo de evento, localização, data e categorias de interesse.
 
@@ -24,7 +28,8 @@ Integração com Calendário: Sincronize os eventos que você comprou com seu ca
 
 Suporte ao Cliente: Nossa equipe de suporte está disponível para ajudar com qualquer dúvida ou problema. Oferecemos atendimento ao cliente dedicado para garantir que sua experiência seja a melhor possível.
 
-Por Que Escolher o Hoje é Aonde?
+# Por Que Escolher o Hoje é Aonde?
+
 Facilidade de Uso: Interface intuitiva e fácil de navegar.
 Variedade e Cobertura: Abrangência em eventos e atividades locais.
 Segurança e Confiabilidade: Compra de ingressos com segurança e proteção de dados.
