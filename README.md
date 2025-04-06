@@ -11,7 +11,6 @@ Ronaldo Francisco,
 
 Sidney Silva,
 
-Vinicius.
 
 # Apresentação do Hoje é Aonde
 
